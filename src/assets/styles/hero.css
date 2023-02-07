@@ -7,10 +7,12 @@
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 3rem;
+
+  min-height: 100vh;
 }
 
 .hero-body {
-  --vspacing: 2rem;
+  --vallspacing: 2rem;
   letter-spacing: 0.05em;
 }
 

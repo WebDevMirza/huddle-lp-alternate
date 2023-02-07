@@ -5,13 +5,14 @@
 
 .holder {
   --vspacing: 1.5rem;
+  --vlgspacing: 4.5rem;
   width: min(var(--mobile), 100% - 2rem);
   margin-inline: auto;
 
-  /* outline: 4px dotted red; */
+  /* border: 4px dotted red; */
 }
 
-.hero {
+.hero-section {
   background-color: var(--VeryPaleCyan);
   background-image: url("../images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
@@ -22,20 +23,28 @@
 @media (min-width: 1024px) {
   .holder {
     --vspacing: 3rem;
+    --vlgspacing: 6rem;
     width: min(var(--desktop), 100% - 10rem);
 
     /* outline: 4px dotted red; */
   }
 
-  .hero {
+  .hero-section {
     background-image: url("../images/bg-hero-desktop.svg");
   }
 }
 
 /* spacing */
-.flow,
-.flow-all > * + * {
+.flow {
   margin-top: var(--vspacing, 1rem);
+}
+
+.lg-flow {
+  margin-top: var(--vlgspacing, 4rem);
+}
+
+.flow-all > * + * {
+  margin-top: var(--vallspacing, 1rem);
 }
 
 /* utility */

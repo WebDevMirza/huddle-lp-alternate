@@ -1,0 +1,56 @@
+.holder-card {
+  --vallspacing: 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+
+  padding: 2rem;
+  text-align: center;
+
+  /* border: 4px dotted red; */
+  /* min-height: 400px; */
+}
+
+.card-title {
+  font-family: var(--ff-secondary);
+  font-size: 1.325rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 1024px) {
+  .holder-card {
+    --vallspacing: 0;
+    --vspacing: 2rem;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    padding: 3rem 3rem 3rem 5rem;
+    margin-inline: 2rem;
+    text-align: left;
+  }
+
+  .card-img {
+    max-width: 60%;
+  }
+
+  .card-title {
+    font-size: 1.625rem;
+  }
+
+  .card-text {
+    max-width: 50ch;
+    letter-spacing: 0.03em;
+  }
+
+  .holder-card:nth-of-type(odd) .card-img {
+    order: 2;
+    margin-left: auto;
+  }
+}
