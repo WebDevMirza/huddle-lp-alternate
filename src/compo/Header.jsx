@@ -6,10 +6,12 @@ export const Header = () => {
     <>
       <div className="holder holder-header flow">
         <div className="logo">
-          <img src={Logo} alt="Huddle" />
+          <a href="#">
+            <img src={Logo} alt="Huddle" />
+          </a>
         </div>
         <div>
-          <a href="#" className="btn">
+          <a href="#" className="btn btn-trial">
             Try It Free
           </a>
         </div>
