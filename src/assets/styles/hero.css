@@ -1,0 +1,45 @@
+.holder-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 4rem;
+
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.hero-body {
+  --vspacing: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-body h1 {
+  font-family: var(--ff-secondary);
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.hero-body p {
+  max-width: 37ch;
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .holder-hero {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+
+    padding-top: 9rem;
+  }
+
+  .hero-body h1 {
+    max-width: 20ch;
+    font-size: 2.25rem;
+  }
+
+  .hero-body p {
+    max-width: 50ch;
+    margin-inline: 0;
+  }
+}
