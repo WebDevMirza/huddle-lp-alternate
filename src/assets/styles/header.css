@@ -1,0 +1,20 @@
+.holder-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.holder-header img {
+  width: 150px;
+}
+
+.holder-header a {
+  float: right;
+}
+
+@media (min-width: 1024px) {
+  .holder-header img {
+    width: auto;
+  }
+}
