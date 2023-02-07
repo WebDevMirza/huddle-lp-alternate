@@ -1,4 +1,9 @@
 .holder-header {
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  transform: translateX(-50%);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -9,7 +14,8 @@
   width: 150px;
 }
 
-.holder-header a {
+.btn-trial {
+  background-color: white;
   float: right;
 }
 
