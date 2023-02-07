@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(./assets/fonts/Poppins-bold.woff2) format("woff2"),
+    url(./assets/fonts/Poppins-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sams"), url(./assets/fonts/OpenSans-regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url(./assets/fonts/OpenSans-bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --fs-fontsize: 1rem;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-400);
+}
+
+/* ==============================
+Layout
+============================== */
