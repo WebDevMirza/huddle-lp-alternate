@@ -1,13 +1,14 @@
 import "./App.css";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <>
-      <h1>init</h1>
+      <Home />
     </>
   );
 }
 
 export default App;
 
-// 1. upload on github
+// 1. Layout
