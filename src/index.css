@@ -54,6 +54,7 @@ hr {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
