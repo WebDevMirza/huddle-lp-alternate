@@ -52,6 +52,8 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-fontsize);
   font-weight: var(--fw-400);
+  color: var(--VeryDarkCyan);
+  line-height: 1.6;
 }
 
 /* ==============================

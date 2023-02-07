@@ -1,0 +1,71 @@
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+.holder {
+  --vspacing: 1.5rem;
+  width: min(var(--mobile), 100% - 2rem);
+  margin-inline: auto;
+
+  /* outline: 4px dotted red; */
+}
+
+.hero {
+  background-color: var(--VeryPaleCyan);
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (min-width: 1024px) {
+  .holder {
+    --vspacing: 3rem;
+    width: min(var(--desktop), 100% - 10rem);
+
+    /* outline: 4px dotted red; */
+  }
+
+  .hero {
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+
+/* spacing */
+.flow,
+.flow-all > * + * {
+  margin-top: var(--vspacing, 1rem);
+}
+
+/* utility */
+.btn {
+  cursor: pointer;
+  color: var(--VeryDarkCyan);
+  font-weight: 700;
+  padding: 0.625rem 1.5rem;
+  border-radius: 100vmax;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  color: var(--GrayishBlue);
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-main {
+  cursor: pointer;
+  background-color: var(--Pink);
+  color: var(--VeryPaleCyan);
+  padding: 0.75rem 3.5rem;
+  font-weight: 600;
+  border-radius: 100vmax;
+  box-shadow: hsla(0, 0%, 41%, 0.425) 0px 8px 24px;
+}
+
+.btn-main:hover,
+.btn-main:focus-visible {
+  filter: invert(1);
+}
