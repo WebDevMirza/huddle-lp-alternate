@@ -1,0 +1,146 @@
+.bg-footer {
+  background-color: var(--VeryDarkCyan);
+  color: var(--VeryPaleCyan);
+}
+
+.footer-wrapper {
+  --vspacing: 10rem;
+  padding-top: 8rem;
+}
+
+.footer-body {
+  --vallspacing: 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  /* Top spacing with bg */
+  padding-top: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-body a {
+  color: inherit;
+}
+
+.footer-logo img {
+  filter: invert(1);
+  width: 200px;
+}
+
+.footer-contact > * + * {
+  margin-left: 47px;
+}
+
+.footer-text,
+.tel,
+.email {
+  position: relative;
+}
+
+.email {
+  --vallspacing: 0.75rem;
+}
+
+.footer-text::after,
+.tel::after,
+.email::after {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+}
+
+.footer-text::after {
+  background-image: url("../images/icon-location.svg");
+  top: 6px;
+}
+
+.tel::after {
+  background-image: url("../images/icon-phone.svg");
+  top: 6px;
+}
+
+.email::after {
+  background-image: url("../images/icon-email.svg");
+  top: 6px;
+}
+
+/* nav */
+.footer-nav {
+  --vallspacing: 0.75rem;
+  font-size: 1.125rem;
+  padding-left: 0.325rem;
+}
+
+.footer-nav a:hover {
+  color: var(--Pink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: white;
+}
+
+/* Social */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.social a {
+  display: block;
+  scale: 0.65;
+  padding: 1rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.social a:hover > svg *,
+.social a:hover,
+.social a:focus > svg *,
+.social a:focus {
+  fill: var(--Pink);
+  border-color: var(--Pink);
+}
+
+.social a:focus-visible {
+  outline-color: var(--Pink);
+}
+
+svg {
+  fill: var(--VeryPaleCyan);
+  display: inline-block;
+}
+
+.copyright {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.675rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-body {
+    grid-template-columns: 4fr 5fr 3fr;
+    align-items: start;
+  }
+  .footer-nav ul {
+    --vallspacing: 0;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-nav ul li {
+    margin-top: 0.75rem;
+  }
+
+  .copyright {
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+}

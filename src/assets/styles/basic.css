@@ -9,7 +9,8 @@
   width: min(var(--mobile), 100% - 2rem);
   margin-inline: auto;
 
-  /* border: 4px dotted red; */
+  /* border: 4px dotted red;
+  min-height: 400px; */
 }
 
 .hero-section {

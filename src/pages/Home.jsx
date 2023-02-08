@@ -5,6 +5,7 @@ import { Hero } from "../compo/Hero";
 
 import "../assets/styles/basic.css";
 import Data from "../assets/data/Data.json";
+import { Footer } from "../compo/Footer";
 
 export const Home = () => {
   const [data, setData] = useState(Data);
@@ -26,10 +27,12 @@ export const Home = () => {
             </div>
           </section>
         </main>
-        <footer></footer>
+        <footer className="bg-footer">
+          <Footer />
+        </footer>
       </div>
     </>
   );
 };
 
-// 1. footer
+// 1. footer - add content

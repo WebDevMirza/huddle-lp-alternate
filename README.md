@@ -29,12 +29,18 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ## What I've Learnt
 
-- Use of .woff fonts for improving page loading.
-- Use of css @container query.
+```
+.footer-nav a:hover {
+  color: var(--Pink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: white;
+}
+```
 
 ## Willing To Reach Advanced Goals
 
-- float css property
+- svg
 
 ## Author
 
