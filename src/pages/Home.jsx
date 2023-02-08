@@ -6,6 +6,7 @@ import { Hero } from "../compo/Hero";
 import "../assets/styles/basic.css";
 import Data from "../assets/data/Data.json";
 import { Footer } from "../compo/Footer";
+import { Cta } from "../compo/Cta";
 
 export const Home = () => {
   const [data, setData] = useState(Data);
@@ -26,6 +27,9 @@ export const Home = () => {
               })}
             </div>
           </section>
+          <section className="cta">
+            <Cta />
+          </section>
         </main>
         <footer className="bg-footer">
           <Footer />
@@ -35,4 +39,4 @@ export const Home = () => {
   );
 };
 
-// 1. footer - add content
+// 1. cta

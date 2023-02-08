@@ -4,7 +4,7 @@
 }
 
 .footer-wrapper {
-  --vspacing: 10rem;
+  --vspacing: 12rem;
   padding-top: 8rem;
 }
 
@@ -76,7 +76,12 @@
   padding-left: 0.325rem;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover,
+.footer-nav a:focus-visible,
+.tel a:hover,
+.tel a:focus-visible,
+.email a:hover,
+.email a:focus-visible {
   color: var(--Pink);
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -123,6 +128,11 @@ svg {
 }
 
 @media (min-width: 1024px) {
+  .footer-wrapper {
+    --vspacing: 15rem;
+    padding-top: 9rem;
+  }
+
   .footer-body {
     grid-template-columns: 4fr 5fr 3fr;
     align-items: start;

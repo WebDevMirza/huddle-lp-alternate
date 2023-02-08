@@ -1,0 +1,34 @@
+.cta-content {
+  position: relative;
+  text-align: center;
+}
+
+.mini-holder {
+  --vallspacing: 2rem;
+  min-width: 360px;
+  background-color: white;
+  position: absolute;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  top: 65px;
+  left: 50vw;
+  transform: translateX(-50%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mini-holder p {
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  font-size: 1.075rem;
+}
+
+@media (min-width: 1024px) {
+  .mini-holder {
+    min-width: 600px;
+    top: 90px;
+  }
+
+  .mini-holder p {
+    font-size: 1.75rem;
+  }
+}
