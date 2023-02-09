@@ -5,7 +5,7 @@ export const Cta = () => {
     <>
       <div className="cta-content">
         <div className="mini-holder flow-all">
-          <p>Ready To Build Your Community?</p>
+          <h1>Ready To Build Your Community?</h1>
           <a className="btn-main" href="#">
             Get Started For Free
           </a>

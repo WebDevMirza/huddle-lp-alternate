@@ -16,7 +16,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.mini-holder p {
+.mini-holder h1 {
   font-family: var(--ff-secondary);
   font-weight: 700;
   font-size: 1.075rem;
@@ -28,7 +28,7 @@
     top: 90px;
   }
 
-  .mini-holder p {
+  .mini-holder h1 {
     font-size: 1.75rem;
   }
 }
