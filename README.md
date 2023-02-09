@@ -13,7 +13,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ## Performance Test
 
-![](./per.jpg)
+![](./screenshots/per.jpg)
 
 ## Screenshot
 
