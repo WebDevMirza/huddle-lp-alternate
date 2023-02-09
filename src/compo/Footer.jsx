@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="holder">
         <div className="footer-wrapper flow">
           <div className="footer-logo">
-            <img src={Logo} alt="Huddle" />
+            <img src={Logo} alt="Huddle" width={200} height={32.5} />
           </div>
           <div className="footer-body">
             <ul className="footer-contact flow-all">
