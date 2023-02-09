@@ -17,15 +17,13 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ## Screenshot
 
-![](./ss.gif)
-
 ### Desktop
 
-![](./lg.webp)
+![](./screenshots/lg.webp)
 
 ### Mobile
 
-<img src="./sm.webp" width="400" />
+<img src="./screenshots/sm.webp" width="400" />
 
 ## What I've Learnt
 
@@ -41,6 +39,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 ## Willing To Reach Advanced Goals
 
 - svg
+- css naming and good practice
 
 ## Author
 
