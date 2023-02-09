@@ -7,7 +7,7 @@ export const Header = () => {
       <div className="holder holder-header flow">
         <div className="logo">
           <a href="#">
-            <img src={Logo} alt="Huddle" />
+            <img src={Logo} alt="Huddle" width={240} height={39} />
           </a>
         </div>
         <div>

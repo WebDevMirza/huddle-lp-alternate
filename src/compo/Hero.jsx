@@ -16,7 +16,7 @@ export const Hero = () => {
           </a>
         </div>
         <div className="hero-img">
-          <img src={HeroImg} alt="Huddle features" />
+          <img src={HeroImg} alt="Huddle features" width={528} height={377} />
         </div>
       </div>
     </>
